@@ -215,15 +215,6 @@ Summary of findings:
 
 <img src="figures/boiled_egg.png" alt="BOILED-Egg model of selected compounds and rilpivirine" width="700"/>
 
-## Limitations
-
-- All results are **computational (in silico)**. No in vitro or in vivo validation has been performed, and docking-based Ki values are not experimental measurements.
-- The working dataset is a balanced subsample (1,600 inactive out of 39,684), and the reported metrics apply to this dataset and protocol.
-- QED is a drug-likeness score. It should not be read as an HIV interaction score.
-- GDL's ROC-AUC advantage over RF and SVM is not statistically significant after multiple-comparison correction.
-- ADME and toxicity values are model predictions (SwissADME, admetSAR3).
-
-Planned next steps include biological testing of the lead compounds and applying the framework to other disease areas (e.g., cancer, Alzheimer's disease, antibiotic resistance).
 
 ## Setup Environment
 
