@@ -221,7 +221,7 @@ Summary of findings:
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/Sekomms/GNN-HIV.git
+    git clone https://github.com/aycabostancioglu/Anti-HIV.git
     ```
 
 2. Navigate to the project directory:
