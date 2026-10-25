@@ -227,7 +227,7 @@ Summary of findings:
 2. Navigate to the project directory:
 
     ```bash
-    cd GNN-HIV
+    cd Anti-HIV
     ```
 
 3. Open the notebooks in [Google Colab](https://colab.research.google.com/) or in a local Jupyter environment with Python 3 and the common scientific stack (e.g., NumPy, pandas, scikit-learn, RDKit and the deep learning framework used by each notebook).
