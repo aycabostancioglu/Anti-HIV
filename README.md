@@ -31,19 +31,6 @@ The data come from **MoleculeNet (HIV)**, selected after reviewing 11 drug datab
 - Molecules are represented as **SMILES**. For the GDL model they are converted with **RDKit** into undirected molecular graphs (atoms as nodes, bonds as edges). Node features include atom type, degree, hybridization, aromaticity and formal charge. Edge features include bond type and configuration.
 - Invalid and duplicate SMILES were removed.
 
-## Repository Structure
-
-<!-- Adapt folder and file names to the actual repository content -->
-```text
-dataset/              # HIV_Veri_seti.csv (3,043 compounds), generated candidates, QED scores
-generation/           # Autoencoder-LSTM molecule generation (WP3)
-gdl/                  # MPNN-based GDL model, 5-fold CV, QED scoring (WP4)
-comparison/           # Baselines: GCN, GAT, MPNN, VAE, RNN, GRU / RF, SVM, MLP, Mol2Vec+SVM, CNN, BRNN
-docking/              # Ligand/receptor preparation, AutoDock and Vina outputs (WP6)
-admet/                # SwissADME and admetSAR3 results
-figures/              # Architecture, performance, docking and BOILED-Egg figures
-```
-
 ## Stage 1: Molecule Generation (Autoencoder-LSTM)
 
 SMILES (max length 127, vocabulary 60, character-level one-hot) are encoded by an LSTM encoder into a **128-dimensional latent space** and decoded back by an LSTM decoder. A classification head is trained jointly with the reconstruction objective.
